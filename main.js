@@ -1,11 +1,10 @@
-// main.js
-const navButtons = document.querySelectorAll(".nav button"),
-  cardForms = document.querySelector(".form .forms"),
+const navButtons = document.querySelectorAll(".card-nav button"),
+  cardForms = document.querySelector(".card-form .forms"),
   activeBar = document.querySelector(".active-bar"),
-  cardHeroInner = document.querySelector(".hero-inner");
+  cardHeroInner = document.querySelector(".card-hero-inner");
 
 const selectView = (view) => {
-  for (const button of navButtons) {
+  for (let button of navButtons) {
     button.classList.remove("active");
 
     if (button.classList.contains(view)) {
