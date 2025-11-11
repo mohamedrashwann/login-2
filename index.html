@@ -1,0 +1,65 @@
+<!-- index.html -->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+</head>
+<body>
+  <div class="card">
+    <ul class="nav">
+      <li>
+        <img src="logo.svg" />
+        <span class="active-bar"></span>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="signin active"
+          onclick="selectView('signin')"
+        >
+          <i class="ai-person-check"></i>
+          <span>Sign In</span>
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="signup"
+          onclick="selectView('signup')"
+        >
+          <i class="ai-person-add"></i>
+          <span>Sign Up</span>
+        </button>
+      </li>
+    </ul>
+
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-content signin">
+          <h2>Welcome Back.</h2>
+          <h3>Please enter your credentials.</h3>
+          <img src="signin.svg" />
+        </div>
+        <div class="hero-content signup">
+          <h2>Sign Up Now.</h2>
+          <h3>Join the crowd and get started.</h3>
+          <img src="signup.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="forms">
+        <form class="active">
+          <!-- sign in form -->
+        </form>
+        <form>
+          <!-- sign up form -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
